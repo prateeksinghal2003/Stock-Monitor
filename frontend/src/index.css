@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.nav-link{
+  margin-left: 40px;
+    font-weight: 500;
+}
+
+
+.nav-link:hover {
+  color: blue !important;
+}
+
+
+
+#supportHero{
+  background-color: rgb(56, 126, 209);
+  color: white;
+}
+
+#supportHero a{
+  color: white;
+}
+
+#supportWrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+
+#supportHero input{
+  padding: 20px 50px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+
+.link-hover-blue {
+  color: #212529; /* Bootstrap default dark */
+  text-decoration: none;
+}
+
+.link-hover-blue:hover {
+  color: #0d6efd; /* Bootstrap's primary blue */
+}
+
+#search-bar-a-tags{
+    margin-top:1rem ;
+    padding-bottom: 4px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    font-size: x-large;
+}
+
+#list-id{
+  margin-top: 1em;
+}
+
+ #input-div{
+  display: flex;
+} 
+
+
+#serach-bar{
+  float: right;
+   
+    position: relative;
+    top: 1.4em;
+    right: 2.5em;
+    opacity: 0.6;
+}
+
+.about-heading{
+  color:#80ddff
+}
+
+.dev-image{
+     filter: grayscale(1);
+    transition: 1s;
+
+    animation: scaleImage 5s linear infinite ;
+}
+
+
+@keyframes scaleImage
+{
+  0%
+  {
+    filter: grayscale(0);
+    transform: scale(1);
+  }
+
+
+  50%
+  {
+    transform: scale(1.1);
+    filter: grayscale(0);
+    box-shadow: 3px 3px 10px black;
+  }
+
+  100%
+  {
+    transform: scale(1);
+    filter: grayscale(0);
+  }
+
+}
+
+
+/* Products---Hero----------------start */
+.intro {
+    min-height: 30vh;
+    margin-bottom : 80px;
+    margin-top: 4rem;
+
+}
+
+.row {
+    box-sizing: border-box ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.seven {
+    max-width: 56.6666666667%;
+}
+
+.intro .large {
+    margin: 0;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.intro .subtitle {
+  margin-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+.five {
+    max-width: 39.3333333333%;
+}
+
+
+
+
+.descript{
+color: #888;
+}
+
+/* Products---Hero----------------end */
+
+
+.eight {
+    max-width: 65.3333333333%;
+}
+
+.text-right {
+    text-align: right;
+}
+.four {
+    max-width: 30.6666666667%;
+}
+
+.chapter-list.videos {
+    background: #F5F5F7;
+    max-height: 65vh;
+    overflow-y: scroll;
+    padding: 20px;
+    border-radius: 15px;
+}
+.chapter-list.videos .item {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.chapter-list.videos a.selected {
+    color: var(--color-blue);
+}
+.chapter-list .selected {
+    font-weight: 600;
+}
+.noul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.seven {
+    max-width: 56.6666666667%;
+}
+.post p {
+    margin: 0 0 15px 0;
+}
+
+.post iframe {
+    width: 100%;
+    min-height: 450px;
+    margin: 0 0 30px 0;
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 4px #eee;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.video-list-item {
+  cursor: pointer;
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.video-list-item:hover {
+  color: blue;
+}

@@ -20,7 +20,7 @@ return (
       <div class="container">
 <div>
     <div>
-        <section class="single-chapter video">
+        <section class="single-chapter video" >
             <header>
                 <div class="row">
                 <div class="eight columns">
@@ -35,7 +35,7 @@ return (
 
 
 
-<section class="chapter-body">
+<section class="chapter-body" style={{ marginTop: "2rem" }}>
 <div class="row">
     <div class="five columns">
 

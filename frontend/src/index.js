@@ -6,7 +6,7 @@ import HomePage from './landing_page/home/Homepage';
 // import Signup from "./landing_page/signup/Signup";
  import AboutPage from "./landing_page/about/AboutPage";
  import ProductPage from "./landing_page/products/ProductsPage";
- import PricingPage from "./landing_page/pricing/PricingPage";
+ import JuniorPage from "./landing_page/Junior/JuniorPage";
  import SupportPage from "./landing_page/support/SupportPage";
 
 import NotFound from "./landing_page/NotFound";
@@ -29,7 +29,7 @@ root.render(
         <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
            <Route path="/videos" element={<ProductPage />} />
-             <Route path="/pricing" element={<PricingPage />} />
+             <Route path="/pricing" element={<JuniorPage />} />
               <Route path="/support" element={<SupportPage />} />
                <Route path="/videos/video-mod-1" element={<Videomod1 />} />
                  <Route path="/videos/video-mod-2" element={<Videomod2 />} />

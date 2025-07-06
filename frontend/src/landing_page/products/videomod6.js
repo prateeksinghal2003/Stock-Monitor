@@ -35,7 +35,7 @@ return (
 
 
 
-<section class="chapter-body">
+<section class="chapter-body" style={{ marginTop: "2rem" }}>
 <div class="row">
     <div class="five columns">
 

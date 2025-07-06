@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 
 function Hero() {
     return ( 
@@ -18,12 +19,16 @@ function Hero() {
           more
         </p>
 
-        <button
+        <Link to="/videos">
+           <button
           className="p-2 btn btn-primary fs-5 mb-5"
           style={{ width: "20%", margin: "0 auto" }}
         >
-          Signup Now
+          Learn Now
         </button>
+        </Link>
+
+       
         
       </div>
 

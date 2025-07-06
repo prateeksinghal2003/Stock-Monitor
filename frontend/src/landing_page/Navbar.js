@@ -51,7 +51,7 @@ function Navbar() {
               </li>
 
               <li class="nav-item ">
-                <Link class="nav-link active" to="/pricing">
+                <Link class="nav-link active" to="/junior">
                   Junior
                 </Link>
               </li>

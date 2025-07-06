@@ -29,7 +29,7 @@ root.render(
         <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
            <Route path="/videos" element={<ProductPage />} />
-             <Route path="/pricing" element={<JuniorPage />} />
+             <Route path="/junior" element={<JuniorPage />} />
               <Route path="/support" element={<SupportPage />} />
                <Route path="/videos/video-mod-1" element={<Videomod1 />} />
                  <Route path="/videos/video-mod-2" element={<Videomod2 />} />

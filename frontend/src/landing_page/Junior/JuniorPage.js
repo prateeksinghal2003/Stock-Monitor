@@ -20,6 +20,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import { useState } from "react";
+import Navbar from "../Navbar";
 
  function Junior(){
 const url=["https://youtube.com/embed/9155SZc96kk", "https://youtube.com/embed/D916Xq4Fbxg",
@@ -35,6 +36,7 @@ const url=["https://youtube.com/embed/9155SZc96kk", "https://youtube.com/embed/D
 
 return (
     <div>
+    <Navbar></Navbar>
       <div class="container">
 <div>
     <div>

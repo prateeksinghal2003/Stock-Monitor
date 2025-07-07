@@ -1,6 +1,9 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import { useState } from "react";
+import  './Videos.css';
+
+import Navbar from "../Navbar" ;
 
  function Videomod1(){
 const url=["https://www.youtube.com/embed/GcZW24SkbHM", "https://www.youtube.com/embed/C7_JHlsqFlM",
@@ -16,15 +19,16 @@ const url=["https://www.youtube.com/embed/GcZW24SkbHM", "https://www.youtube.com
 
 
 return (
-    <div>
+<div>
+    <Navbar></Navbar>
       <div class="container">
 <div>
     <div>
-        <section class="single-chapter video">
+        <section class="single-chapter video" >
             <header>
                 <div class="row">
                 <div class="eight columns">
-                    <p ><strong>Module 1. Introduction to Stock Market (video series)</strong></p>
+                    <p ><strong>Module 2. Technical Analysis (Video Series)</strong></p>
                 </div>
 
            <Link to="/videos" class="four columns text-right" style={{ color: 'inherit', textDecoration: 'none' }}>
@@ -100,6 +104,7 @@ return (
 
 </div>
     </div>
+
  )
 }
 

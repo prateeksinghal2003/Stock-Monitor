@@ -1,6 +1,10 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import { useState } from "react";
+//import styles from './Videos.module.css';
+import  './Videos.css';
+
+import Navbar from "../Navbar" ;
 
  function Videomod2(){
 const url=["https://www.youtube.com/embed/GcZW24SkbHM", "https://www.youtube.com/embed/C7_JHlsqFlM",
@@ -17,6 +21,7 @@ const url=["https://www.youtube.com/embed/GcZW24SkbHM", "https://www.youtube.com
 
 return (
     <div>
+    <Navbar></Navbar>
       <div class="container">
 <div>
     <div>

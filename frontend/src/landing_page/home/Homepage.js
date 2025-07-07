@@ -4,6 +4,8 @@ import Awards from './Awards'
 import Stats from './Stats'
 import Education from './Education'
 import Pricing from './Pricing'
+import Navbar from "../Navbar";
+import "./HomePage.css";
 
 import Footer from '../Footer'
 import {Link} from "react-router-dom"
@@ -11,7 +13,7 @@ function HomePage() {
 
     return (
         <>
-     
+     <Navbar></Navbar>
             <Hero></Hero>
               <section class="intro-icons">
                <h2 class="homepageheading">Explore Stocks Monitor</h2>

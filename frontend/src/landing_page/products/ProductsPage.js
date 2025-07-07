@@ -4,12 +4,15 @@ import Hero from "./Hero";
 import LeftSection from "./LeftSection";
 import RightSection from "./RightSection";
 import Universe from "./Universe";
+import Navbar from "../Navbar";
+import "./Products.css";
 
 
 
 function ProductPage() {
   return (
     <>
+    <Navbar></Navbar>
       <Hero />
       <LeftSection
         imageURL="media/images/videomod1.png"

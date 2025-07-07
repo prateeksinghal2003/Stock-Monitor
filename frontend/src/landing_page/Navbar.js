@@ -10,8 +10,8 @@ function Navbar() {
       <div class="container p-2">
         <Link class="navbar-brand" to="/">
           <img
-            src="media/images/stockmonitor3.png"
-            style={{ width: "35%" }}
+           src={`${process.env.PUBLIC_URL}/media/images/stockmonitor3.png`}
+            style={{ width: "35%",height:"25%" }}
             alt="Logo"
           />
         </Link>
@@ -63,7 +63,7 @@ function Navbar() {
               </li>
 
                <li class="nav-item ">
-                <Link class="nav-link active" to="/">
+                <Link class="nav-link active" to="/dashboard/summary">
                   <i class="fa fa-bars" aria-hidden="true"></i>
                 </Link>
               </li>

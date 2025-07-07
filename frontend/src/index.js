@@ -10,7 +10,7 @@ import HomePage from './landing_page/home/Homepage';
  import SupportPage from "./landing_page/support/SupportPage";
 
 import NotFound from "./landing_page/NotFound";
-import Navbar from "./landing_page/Navbar";
+// import Navbar from "./landing_page/Navbar";
 import Footer from "./landing_page/Footer";
 import Videomod1 from './landing_page/products/videomod1';
 import Videomod2 from './landing_page/products/videomod2';
@@ -18,13 +18,15 @@ import Videomod3 from './landing_page/products/videomod3';
 import Videomod4 from './landing_page/products/videomod4';
 import Videomod5 from './landing_page/products/videomod5';
 import Videomod6 from './landing_page/products/videomod6';
+import Home from './components/Home';
+import Summary from './components/Summary';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  <BrowserRouter>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
@@ -38,7 +40,28 @@ root.render(
                        <Route path="/videos/video-mod-5" element={<Videomod5 />} />
                          <Route path="/videos/video-mod-6" element={<Videomod6 />} />
         {/* * route  is hit when no route matches */}
-         <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<NotFound />} />
+
+         
+       <Route element={
+       
+          <Home />
+       
+      } >
+
+
+<Route  path="/dashboard/summary" element={<Summary />} />
+
+
+</Route> 
+
+
+
+
+
+
+
+
       </Routes>
       <Footer />
     </BrowserRouter>

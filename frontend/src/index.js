@@ -20,6 +20,7 @@ import Videomod5 from './landing_page/products/videomod5';
 import Videomod6 from './landing_page/products/videomod6';
 import Home from './components/Home';
 import Summary from './components/Summary';
+import Orders from './components/Orders';
 
 
 
@@ -51,6 +52,7 @@ root.render(
 
 
 <Route  path="/dashboard/summary" element={<Summary />} />
+<Route  path="/dashboard/orders" element={<Orders />} />
 
 
 </Route> 

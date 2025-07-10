@@ -10,7 +10,7 @@ import Positions from "./Positions";
 import Summary from "./Summary";
 import WatchList from "./WatchList";
 import { GeneralContextProvider } from "./GeneralContext";
-//import   "./Dashboard.css";
+import   "./Dashboard.css";
 
 const Dashboard = () => {
   return (

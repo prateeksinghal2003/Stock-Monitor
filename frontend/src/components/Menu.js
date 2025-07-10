@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
 
+// custom css line 105 to 199
 const Menu = () => {
 
     //to know which option is sellected
@@ -9,7 +10,7 @@ const Menu = () => {
   const [selectedMenu, setSelectedMenu] = useState(0);
 
   //hook for profile dropdown
-  const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
+ // const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
 
   const handleMenuClick = (index) => {
     setSelectedMenu(index);
@@ -17,27 +18,28 @@ const Menu = () => {
 
 
   //toggle the value 
-  const handleProfileClick = (index) => {
-    setIsProfileDropdownOpen(!isProfileDropdownOpen);
-  };
+  // const handleProfileClick = (index) => {
+  //   setIsProfileDropdownOpen(!isProfileDropdownOpen);
+  // };
 
 
    //highlight the current option
-  const menuClass = "menu";
-  const activeMenuClass = "menu selected";
+  const menuClass = "dashmenu";
+  const activeMenuClass = "dashmenuselected";
 
   return (
     <div className="menu-container">
 
-      <img src="logo.png" style={{ width: "50px" }} />
+      <img src={`${process.env.PUBLIC_URL}/media/images/topbarmenulogo.png`} style={{ width: "50px", marginBottom: "0.5rem" }}  />
       
-      <div className="menus">
+      <div className="dashmenus">
+
         <ul>
           <li>
 
             <Link
-              style={{ textDecoration: "none" }}
-              to="/"
+               style={{ textDecoration: "none" }}
+              to="/dashboard/summary"
               onClick={() => handleMenuClick(0)}
             >
               <p className={selectedMenu === 0 ? activeMenuClass : menuClass}>
@@ -49,7 +51,7 @@ const Menu = () => {
           <li>
             <Link
               style={{ textDecoration: "none" }}
-              to="/orders"
+              to="/dashboard/orders"
               onClick={() => handleMenuClick(1)}
             >
               <p className={selectedMenu === 1 ? activeMenuClass : menuClass}>
@@ -113,15 +115,18 @@ const Menu = () => {
 
         </ul>
 
-        <hr />
 
-        <div className="profile" onClick={handleProfileClick}>
+       
+
+        <div className="profile" >
+
           <div className="avatar">ZU</div>
           <p className="username">USERID</p>
         </div>
 
 
       </div>
+
     </div>
   );
 };

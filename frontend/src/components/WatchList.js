@@ -17,7 +17,7 @@ import {
 import { watchlist } from "../data/data";
 import { DoughnutChart } from "./DoughnoutChart";
 
-const labels = watchlist.map((subArray) => subArray["name"]);
+const labels = watchlist.map((stock) => stock.name);
 
 const WatchList = () => {
   const data = {
@@ -47,44 +47,22 @@ const WatchList = () => {
     ],
   };
 
-  // export const data = {
-  //   labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-  // datasets: [
-  //   {
-  //     label: "# of Votes",
-  //     data: [12, 19, 3, 5, 2, 3],
-  //     backgroundColor: [
-  //       "rgba(255, 99, 132, 0.2)",
-  //       "rgba(54, 162, 235, 0.2)",
-  //       "rgba(255, 206, 86, 0.2)",
-  //       "rgba(75, 192, 192, 0.2)",
-  //       "rgba(153, 102, 255, 0.2)",
-  //       "rgba(255, 159, 64, 0.2)",
-  //     ],
-  //     borderColor: [
-  //       "rgba(255, 99, 132, 1)",
-  //       "rgba(54, 162, 235, 1)",
-  //       "rgba(255, 206, 86, 1)",
-  //       "rgba(75, 192, 192, 1)",
-  //       "rgba(153, 102, 255, 1)",
-  //       "rgba(255, 159, 64, 1)",
-  //     ],
-  //     borderWidth: 1,
-  //   },
-  // ],
-  // };
+  
 
   return (
     <div className="watchlist-container">
+
       <div className="search-container">
         <input
           type="text"
           name="search"
           id="search"
           placeholder="Search eg:infy, bse, nifty fut weekly, gold mcx"
-          className="search"
-        />
-        <span className="counts"> {watchlist.length} / 50</span>
+          className="search"/>
+  
+        
+      
+        <span className="counts"> {watchlist.length}</span>
       </div>
 
       <ul className="list">
@@ -116,25 +94,35 @@ const WatchListItem = ({ stock }) => {
   return (
     <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
 
-      <div className="item">
+      <div className="watchlistitem">
 
-      {/* "down"--custom css */}
+    
         <p className={stock.isDown ? "down" : "up"}>{stock.name}</p>
 
-        <div className="itemInfo">
+        <div className="watchlistitem-info">
 
         {/* //right end of menu list */}
-          <span className="percent">{stock.percent}</span>
+          <span className="percent" >{stock.percent}</span>
 
         { stock.isDown ? 
           (
-            <KeyboardArrowDown className="down" />
+            <KeyboardArrowDown className="down" style={{
+  color: "rgb(223, 73, 73)",
+  fontWeight: 500,
+  marginTop: "4px",
+  marginBottom :"0px"
+}} />
           ) : 
           (
-            <KeyboardArrowUp className="down" />
+            <KeyboardArrowUp style={{
+  color: "rgb(103, 201, 136)",
+  fontWeight: 500,
+  marginTop: "4px",
+  marginBottom :"0px"
+}} />
           )
         }
-          <span className="price">{stock.price}</span>
+          <p className={stock.isDown ? "down" : "up"}>{stock.price}</p>
         </div>
 
       </div>
@@ -154,8 +142,20 @@ const WatchListActions = ({ uid }) => {
 
   return (
     <span className="actions">
+
       <span>
       {/* read MaterialUI docs */}
+      
+      {/* <Tooltip
+  title="Buy (B)"           // Tooltip text when hovered
+  placement="top"           // Show tooltip above the element
+  arrow                    // Show a small arrow pointing to the element
+  slots={{
+    transition: Zoom,      // Use Zoom animation for tooltip
+  }}
+  onClick={handleBuyClick} // (⚠️ see note below)
+></Tooltip> */}
+
         <Tooltip
           title="Buy (B)"
           placement="top"

@@ -14,7 +14,8 @@ function Footer() {
         <div className="row mt-5">
 
           <div className="col">
-            <img src="media/images/stockmonitor3.png" style={{ width: "50%" }} />
+          
+            <img src={`${process.env.PUBLIC_URL}/media/images/stockmonitor3.png`} style={{ width: "50%" }} />
             <br></br>
 
             <div className="row">

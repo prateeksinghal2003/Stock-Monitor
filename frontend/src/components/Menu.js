@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
 
 import { Link } from "react-router-dom";
+import GeneralContext from "./GeneralContext";
 
 // custom css line 105 to 199
 const Menu = () => {
@@ -8,12 +9,18 @@ const Menu = () => {
     //to know which option is sellected
     //0 means first index
   const [selectedMenu, setSelectedMenu] = useState(0);
+  const generalContext = useContext(GeneralContext);
 
   //hook for profile dropdown
  // const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
 
   const handleMenuClick = (index) => {
     setSelectedMenu(index);
+    handleCancelClick();
+  };
+
+  const handleCancelClick = () => {
+   generalContext.closeBuyWindow();
   };
 
 
@@ -64,7 +71,7 @@ const Menu = () => {
           <li>
             <Link
               style={{ textDecoration: "none" }}
-              to="/holdings"
+              to="/dashboard/holdings"
               onClick={() => handleMenuClick(2)}
             >
               <p className={selectedMenu === 2 ? activeMenuClass : menuClass}>
@@ -77,7 +84,7 @@ const Menu = () => {
           <li>
             <Link
               style={{ textDecoration: "none" }}
-              to="/positions"
+              to="/dashboard/positions"
               onClick={() => handleMenuClick(3)}
             >
               <p className={selectedMenu === 3 ? activeMenuClass : menuClass}>

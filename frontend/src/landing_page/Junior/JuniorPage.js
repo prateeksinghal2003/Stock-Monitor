@@ -60,15 +60,15 @@ return (
     <div class="five columns">
 
 <ul class="noul chapter-list videos">
-    <li class="item video-list-item">
+    <li class="viditem video-list-item">
         <div onClick={onclickmanage} id="0"> 1. Ideas by the lake </div>
         <div class="text-small">00:13:32</div>
     </li>
-    <li class="item video-list-item">
+    <li class="viditem video-list-item">
         <div  onClick={onclickmanage} id="1"> 2. The vegetable list</div>
         <div class="text-small">00:15:44</div>
     </li>
-    <li class="item video-list-item">
+    <li class="viditem video-list-item">
         <div onClick={onclickmanage} id="2"> 3. The Haircut Affair</div>
         <div class="text-small">00:11:52</div>
     </li>

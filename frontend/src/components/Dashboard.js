@@ -18,6 +18,7 @@ const Dashboard = () => {
       <GeneralContextProvider>
         <WatchList />
       </GeneralContextProvider>
+  
 
       <div className="content">
         {/* <Routes>
@@ -37,3 +38,55 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
+
+
+// import React, { useState } from "react";
+// import { Outlet } from "react-router-dom";
+
+// import BuyActionWindow from "./BuyActionWindow";
+// import WatchList from "./WatchList";
+// import  GeneralContext  from "./GeneralContext";
+
+// const Dashboard = () => {
+
+//  const GeneralContext = React.createContext({
+//   openBuyWindow: (uid) => {},
+//   closeBuyWindow: () => {},
+// }); 
+
+//   const [isBuyWindowOpen, setIsBuyWindowOpen] = useState(false);
+//   const [selectedStockUID, setSelectedStockUID] = useState("");
+
+//   const handleOpenBuyWindow = (uid) => {
+//     setIsBuyWindowOpen(true);
+//     setSelectedStockUID(uid);
+//   };
+
+//   const handleCloseBuyWindow = () => {
+//     setIsBuyWindowOpen(false);
+//     setSelectedStockUID("");
+//   };
+
+//   return (
+//     <div className="dashboard-container">
+//       <GeneralContext.Provider
+//         value={{
+//           openBuyWindow: handleOpenBuyWindow,
+//           closeBuyWindow: handleCloseBuyWindow,
+//         }}
+//       >
+//         <WatchList />
+//         <div className="content">
+//           {isBuyWindowOpen ? (
+//             <BuyActionWindow uid={selectedStockUID} />
+//           ) : (
+//             <Outlet />
+//           )}
+//         </div>
+//       </GeneralContext.Provider>
+//     </div>
+//   );
+// };
+
+// export default Dashboard;

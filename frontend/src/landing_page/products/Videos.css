@@ -16,7 +16,7 @@
     padding: 20px;
     border-radius: 15px;
 }
-.chapter-list.videos .item {
+.chapter-list.videos .viditem{
     border-bottom: 1px solid #ddd;
     padding-bottom: 15px;
     margin-bottom: 15px;

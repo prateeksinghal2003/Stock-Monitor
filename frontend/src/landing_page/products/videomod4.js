@@ -44,27 +44,27 @@ return (
     <div class="five columns">
 
 <ul class="noul chapter-list videos">
-    <li class="item video-list-item">
+    <li class="viditem video-list-item">
         <div onClick={onclickmanage} id="0"> 1. Why should you Invest? </div>
         <div class="text-small">00:08:25</div>
     </li>
-    <li class="item video-list-item">
+    <li class="viditem video-list-item">
         <div  onClick={onclickmanage} id="1"> 2. Market Intermediaries </div>
         <div class="text-small">00:08:58</div>
     </li>
-    <li class="item video-list-item">
+    <li class="viditem video-list-item">
         <div onClick={onclickmanage} id="2"> 3. All about the Initial Public Offer (IPO) </div>
         <div class="text-small">00:08:07</div>
     </li>
-    <li class="item video-list-item">
+    <li class="viditem video-list-item">
         <div  onClick={onclickmanage} id="3" > 4. Why do stock prices fluctuate? </div>
         <div class="text-small">00:03:51</div>
     </li>
-    <li class="item video-list-item">
+    <li class="viditem video-list-item">
         <div onClick={onclickmanage} id="4"> 5. How does a trading platform work? </div>
         <div class="text-small">00:07:07</div>
     </li>
-    <li class="item video-list-item">
+    <li class="viditem video-list-item">
         <div onClick={onclickmanage} id="5"> 6. Stock Market Index </div>
         <div class="text-small">00:07:09</div>
     </li>

@@ -1,10 +1,11 @@
 import React, { useState, useContext } from "react";
+//import {useNavigate} from "react-router-dom";
 
-import axios from "axios";
+//import axios from "axios";
 
 import GeneralContext from "./GeneralContext";
 
-import { Tooltip, Grow } from "@mui/material";
+import { Tooltip} from "@mui/material";
 import Zoom from '@mui/material/Zoom';
 
 import {
@@ -83,6 +84,7 @@ const WatchListItem = ({ stock }) => {
 // currently which stock is selected
   const [showWatchlistActions, setShowWatchlistActions] = useState(false);
 
+
   const handleMouseEnter = (e) => {
     setShowWatchlistActions(true);
   };
@@ -134,10 +136,14 @@ const WatchListItem = ({ stock }) => {
 
 //uid is identifying each item
 const WatchListActions = ({ uid }) => {
-  const generalContext = useContext(GeneralContext);
+ const generalContext = useContext(GeneralContext);
+ 
+
+
 
   const handleBuyClick = () => {
     generalContext.openBuyWindow(uid);
+ 
   };
 
   return (
@@ -202,6 +208,8 @@ const WatchListActions = ({ uid }) => {
         </Tooltip>
 
       </span>
+
     </span>
+   
   );
 };

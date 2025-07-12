@@ -19,8 +19,13 @@ import Videomod4 from './landing_page/products/videomod4';
 import Videomod5 from './landing_page/products/videomod5';
 import Videomod6 from './landing_page/products/videomod6';
 import Home from './components/Home';
+import Home2 from './components/Home2';
 import Summary from './components/Summary';
 import Orders from './components/Orders';
+//import BuyActionWindow from './components/BuyActionWindow';
+import BuyActionWindow from './components/BuyActionWindow';
+import Positions from './components/Positions';
+import Holdings from './components/Holdings';
 
 
 
@@ -53,11 +58,30 @@ root.render(
 
 <Route  path="/dashboard/summary" element={<Summary />} />
 <Route  path="/dashboard/orders" element={<Orders />} />
+ {/* <Route  path="/dashboard/buywindow" element={<BuyActionWindow />} />  */}
+ <Route  path="/dashboard/positions" element={<Positions />} />
+ <Route  path="/dashboard/holdings" element={<Holdings />} />
+
+
+  
+  
 
 
 </Route> 
 
 
+
+
+  {/* <Route element={<Home2 />} >
+ <Route  path="/dashboard/buywindow" element={<BuyActionWindow />} />
+
+
+
+  
+  
+
+
+</Route>  */}
 
 
 
